@@ -28,7 +28,9 @@
 			margin-top: 32px;
 		}
 		.all-content {
-			width: 1795px;
+			box-sizing: border-box;
+  			overflow: hidden;
+			max-width: 1795px;
 			display: flex;
 			margin-top: 32px;
 			min-height: 0;
@@ -71,7 +73,7 @@
 
 		}
 		.all-content {
-			width: 976px;
+			width: 100%;
 			display: flex;
 			margin-top: 16px;
 			min-height: 0;
@@ -326,7 +328,7 @@
 		</div>
 		<div class="for-main-content">
 	<div class="for-topic"><h1>Наши кейсы</h1></div>
-	<div class="all-content">
+	<div class="all-content" id="slider-1">
 		<div class="cases">
 			<div class="cases-name">
 				<div class="text"><img src="../images/cases-logo.svg" id="text-img"></div>
@@ -356,6 +358,69 @@
 		</div>
 	</div>
 	</div>
+
+	<div class="all-content swiper-container" id="slider-2">
+		<div class="cases swiper-wrapper" id="casessw">
+			<div class="cases-name swiper-slide" id="case1">
+				<div class="text"><img src="../images/cases-logo.svg" id="text-img"></div>
+				<div class="text" id="h3"><p><span>TUTORR, </span>Латвия</p></div>
+				<div class="text" id="desc"><p>Платформа онлайн обучения и менторства в сфере DIGITAL, IT и FREELANCE</p></div>
+				<div class="text" id="www"><a href="#">Подробнее<img src="../images/arrow2.svg"></a></div>
+			</div>
+			<div class="cases-name swiper-slide" id="case1">
+				<div class="text"><img src="../images/cases-logo.svg" id="text-img"></div>
+				<div class="text" id="h3"><p><span>TUTORR, </span>Латвия</p></div>
+				<div class="text" id="desc"><p>Платформа онлайн обучения и менторства в сфере DIGITAL, IT и FREELANCE</p></div>
+				<div class="text" id="www"><a href="#">Подробнее<img src="../images/arrow2.svg"></a></div>
+			</div>
+			<div class="cases-name swiper-slide" id="case1">
+				<div class="text"><img src="../images/cases-logo.svg" id="text-img"></div>
+				<div class="text" id="h3"><p><span>TUTORR, </span>Латвия</p></div>
+				<div class="text" id="desc"><p>Платформа онлайн обучения и менторства в сфере DIGITAL, IT и FREELANCE</p></div>
+				<div class="text" id="www"><a href="#">Подробнее<img src="../images/arrow2.svg"></a></div>
+			</div>
+		<div class="cases-name swiper-slide" id="cases-name-color">
+			<a href="#" class="cases-circle2"><div class="cases-circle">
+				<svg width="64" height="46" viewBox="0 0 64 46" fill="white" id="img-arrow" xmlns="http://www.w3.org/2000/svg">
+<path d="M63.1284 20.8956L44.0831 1.85026C42.9211 0.688259 41.0365 0.688259 39.8745 1.85026C38.7123 3.01251 38.7123 4.89657 39.8745 6.05881L53.8398 20.024H2.97584C1.33246 20.024 0 21.3565 0 22.9999C0 24.643 1.33246 25.9757 2.97584 25.9757H53.8398L39.875 39.941C38.7128 41.1032 38.7128 42.9873 39.875 44.1495C40.4559 44.7302 41.2177 45.0211 41.9793 45.0211C42.7409 45.0211 43.5024 44.7302 44.0836 44.1495L63.1284 25.1042C64.2907 23.9419 64.2907 22.0579 63.1284 20.8956Z"/>
+</svg>
+			</div></a>
+			<a href="#">Все кейсы</a>
+		</div>
+	</div>
+	</div>
+
+<div class="all-content swiper-container" id="slider-3">
+		<div class="cases swiper-wrapper" id="casessw">
+			<div class="cases-name swiper-slide" id="case1">
+				<div class="text"><img src="../images/cases-logo.svg" id="text-img"></div>
+				<div class="text" id="h3"><p><span>TUTORR, </span>Латвия</p></div>
+				<div class="text" id="desc"><p>Платформа онлайн обучения и менторства в сфере DIGITAL, IT и FREELANCE</p></div>
+				<div class="text" id="www"><a href="#">Подробнее<img src="../images/arrow2.svg"></a></div>
+			</div>
+			<div class="cases-name swiper-slide" id="case1">
+				<div class="text"><img src="../images/cases-logo.svg" id="text-img"></div>
+				<div class="text" id="h3"><p><span>TUTORR, </span>Латвия</p></div>
+				<div class="text" id="desc"><p>Платформа онлайн обучения и менторства в сфере DIGITAL, IT и FREELANCE</p></div>
+				<div class="text" id="www"><a href="#">Подробнее<img src="../images/arrow2.svg"></a></div>
+			</div>
+			<div class="cases-name swiper-slide" id="case1">
+				<div class="text"><img src="../images/cases-logo.svg" id="text-img"></div>
+				<div class="text" id="h3"><p><span>TUTORR, </span>Латвия</p></div>
+				<div class="text" id="desc"><p>Платформа онлайн обучения и менторства в сфере DIGITAL, IT и FREELANCE</p></div>
+				<div class="text" id="www"><a href="#">Подробнее<img src="../images/arrow2.svg"></a></div>
+			</div>
+		<div class="cases-name swiper-slide" id="cases-name-color">
+			<a href="#" class="cases-circle2"><div class="cases-circle">
+				<svg width="64" height="46" viewBox="0 0 64 46" fill="white" id="img-arrow" xmlns="http://www.w3.org/2000/svg">
+<path d="M63.1284 20.8956L44.0831 1.85026C42.9211 0.688259 41.0365 0.688259 39.8745 1.85026C38.7123 3.01251 38.7123 4.89657 39.8745 6.05881L53.8398 20.024H2.97584C1.33246 20.024 0 21.3565 0 22.9999C0 24.643 1.33246 25.9757 2.97584 25.9757H53.8398L39.875 39.941C38.7128 41.1032 38.7128 42.9873 39.875 44.1495C40.4559 44.7302 41.2177 45.0211 41.9793 45.0211C42.7409 45.0211 43.5024 44.7302 44.0836 44.1495L63.1284 25.1042C64.2907 23.9419 64.2907 22.0579 63.1284 20.8956Z"/>
+</svg>
+			</div></a>
+			<a href="#">Все кейсы</a>
+		</div>
+	</div>
+	</div>
+
 	<div class="for-topic"><h2>Наши партнёры</h2></div>
 	<div class="image-slider swiper-container">
 		<div class="image-slider__wrapper swiper-wrapper">

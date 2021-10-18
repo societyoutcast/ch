@@ -51,18 +51,6 @@ menujs2.onclick = function myFunction () {
 
 // Swiper 
 
-new Swiper('#swipe-1', {
-    slidesPerView: 5,
-    touchRatio: 1.3,
-    touchAngle: 45,
-    touchAngle: 90,
-    grabCursor: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-    }
-    
-});
 new Swiper('.image-slider', {
     slidesPerView: 5,
     touchRatio: 1.3,
@@ -83,6 +71,28 @@ new Swiper('.image-slider-2', {
         disableOnInteraction: false
     }
 });
+new Swiper('#slider-2', {
+    slidesPerView: 2,
+    touchRatio: 1.3,
+    touchAngle: 45,
+    touchAngle: 90,
+    grabCursor: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    }
+});
+new Swiper('#slider-3', {
+    slidesPerView: 2,
+    touchRatio: 1.3,
+    touchAngle: 45,
+    touchAngle: 90,
+    grabCursor: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+    }
+});
 
 new Swiper('.image-slider-3', {
     slidesPerView: 2,
@@ -96,3 +106,4 @@ new Swiper('.image-slider-3', {
         disableOnInteraction: false
     }
 });
+
