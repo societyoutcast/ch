@@ -157,8 +157,6 @@ h2 {
 
 }
 .input2 {
-
-
 font-size: 18pt;
 color: #252729;
 
@@ -167,7 +165,7 @@ color: #252729;
 input[type="text"] {
   font-size: 18px;
   color: #252729;
-  width: 552px;
+  width: 100%;
   background: #FFFFFF;
   border: 1px solid #EAEAF3;
   border-radius: 12px;
@@ -182,7 +180,10 @@ input[type="text"]:focus {
   border-color: #19B7BB;
   
 }
-
+.inputWithIcon i img {
+  height: 22px;
+  width: 100%;
+}
 .inputWithIcon input[type="text"] {
   padding-left: 50px;
 }
@@ -210,9 +211,6 @@ input[type="text"]:focus {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   letter-spacing: 0.03em;
   cursor: pointer;
   display: block;
@@ -227,7 +225,6 @@ input[type="text"]:focus {
 .telegram {
   width: 264px;
   background: #FFFFFF;
-  margin-top: 14.5rem;
   box-sizing: border-box;
   box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
   border-radius: 12px;
@@ -237,6 +234,10 @@ input[type="text"]:focus {
   line-height: 24px;
   color: #252729;
   padding: 15px 0px 10px 0px;
+}
+.telegram:hover {
+  box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.3);
+  transition: 0.3s;
 }
 
 .telegram img{
@@ -982,6 +983,7 @@ display: inline-block;
   white-space: nowrap;
     overflow: hidden;
     vertical-align: middle;
+    
 
 }
 
@@ -1074,12 +1076,22 @@ display: inline-block;
 
 
 /* Контакты */
+.for-topic {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.05em;
+  color: #252729;
+  margin-top: 32px;
+}
 .flex-allcontent {
   max-width: 1800px;
   display: flex;
   margin: 0 auto;
   min-height: 584px;
   margin-top: 32px;
+  padding: 0px;
 }
 
 .flexblock-1 {
@@ -1115,10 +1127,113 @@ display: inline-block;
   border-radius: 24px;
   margin-left: 24px;
 }
-.flexbox {
-  
+.flex-contacts-flexbox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
 }
-
+.flex-contacts-flexbox h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+.flexbox {
+  margin: 32px;
+  width: 50%;
+  text-align: left; 
+}
+.flexboxa a{
+  color: #252729;
+  text-decoration: underline;
+}
+.flexboxa a:hover {
+  color: #19B7BB;
+  transition: 0.2s;
+}
+.flexboxa p {
+  margin: 16px 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+} 
+.flexboxa img {
+  margin-right: 9px;
+  vertical-align: middle;
+}
+.socials-gray {
+  margin-top: 16px;
+}
+.socials-gray a:last-child {
+  margin-left: 16px;
+}
+.socials-gray svg:hover {
+  fill: #19B7BB;
+  transition: 0.3s;
+}
+.contact-buttons {
+  margin-top: 24px;
+}
+.contact-buttons a:last-child {
+  margin-top: 16px;
+}
+.flex-form-margin {
+  width: 100%;
+  margin: 32px;
+}
+.flex-form h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+.form {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.flexbox-2 {
+  margin-top: 16px;
+  display: flex;
+  width: 100%;
+}
+.inputWithIcon {
+  width: 200%;
+  margin-right: 24px;
+}
+.inputWithIcon:last-child {
+  margin-right: 0;
+}
+.flex-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 16px;
+}
+.div-form {
+}
+.h33 {
+  width: 100%;
+}
+.conf {
+  margin-top: 24px;
+  position: absolute;
+  width: 351px;
+}
+.conf p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #858C99;
+}
+.conf a {
+  color: #858C99;
+  text-decoration: underline;
+}
 
 
 
@@ -1175,15 +1290,174 @@ display: inline-block;
 }
 
 @media (min-width: 725px) and (max-width: 1512px) {
+    .for-topic{
+      margin-top: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.05em;
+}
   #slider-1 {
     display: none;
   }
   #slider-2 {
     display: flex;
   }
-
+.flex-allcontent {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  min-height: 1160px;
+  margin-top: 32px;
+  flex-direction: column;
+  padding: 0;
+}
+.flexblock-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.flexblock-2 {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(150px);
+  box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
+  border-radius: 24px;
+  margin-top: 24px;
+  margin-left: 0px;
+}
+}
+@media (min-width: 725px) and (max-width: 1100px) {
+  .for-topic{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+}
+.flex-contacts {
+  border-radius: 16px;
+}
+.flexbox {
+  margin: 24px;
+}
+.flex-form {
+  border-radius: 16px;
+}
+.flex-form-margin {
+  margin: 24px;
+}
+.flexblock-2 {
+  border-radius: 16px;
+}
+.flex-allcontent {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  min-height: 1160px;
+  margin-top: 24px;
+  flex-direction: column;
+  padding: 0;
+}
+.form {
+  justify-content: center;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.flexbox-2 {
+  margin-top: 16px;
+  display: block;
+  width: 100%;
+}
+.inputWithIcon {
+  width: 100%;
+  margin-right: 0px;
+}
+.conf {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.flex-contacts {
+  flex-direction: column;
+  min-height: 272px;
+}
 }
 @media (min-width: 711px) and (max-width: 883px) {
+.for-topic{
+  padding-top: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 64px;
+  
+}
+.flex-allcontent {
+  margin-top: 10px;
+}
+.flexblock-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-contacts {
+  border-radius: 16px;
+}
+.flexbox {
+  margin: 24px;
+}
+.flex-form {
+  border-radius: 16px;
+}
+.flex-form-margin {
+  margin: 24px;
+}
+.flexblock-2 {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+}
+.flex-allcontent {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  min-height: 1160px;
+  margin-top: 24px;
+  flex-direction: column;
+  padding: 0;
+}
+.flex-contacts {
+  flex-direction: column;
+  min-height: 272px;
+}
+.form {
+  justify-content: center;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.flexbox-2 {
+  margin-top: 16px;
+  display: block;
+  width: 100%;
+}
+.inputWithIcon {
+  width: 100%;
+  margin-right: 0px;
+}
+.conf {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
 #slider-1 {
   display: none;
 }
@@ -1530,6 +1804,8 @@ width: 450px;
 #slider-3 {
   display: flex;
 }
+
+
 body {
   background: #EAEAF3;
   margin: 0;
@@ -1914,5 +2190,218 @@ margin-right:  0px;
 .image-slider__slide {  
   line-height: 67px;
   border-radius: 12px;
+}
+
+
+
+
+.flexblock-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.for-topic{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.flexbox {
+  margin: 24px;
+}
+.flex-form {
+  border-radius: 16px;
+}
+.flex-form-margin {
+  margin: 24px;
+}
+.flexblock-2 {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+}
+.flex-allcontent {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  min-height: 1160px;
+  margin-top: 16px;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.form {
+  justify-content: center;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.flexbox-2 {
+  margin-top: 16px;
+  display: block;
+  width: 100%;
+}
+.inputWithIcon {
+  width: 100%;
+  margin-right: 0px;
+}
+.conf {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+}
+.flex-contacts {
+  display: block;
+  width: 100%;
+  min-height: 272px;
+  border-radius: 16px;
+}
+.flex-contacts-flexbox {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.flexbox {
+  
+  width: 100%;
+}
+}
+
+
+@media (min-width: 320px) and (max-width: 568px) {
+.flex-contacts-flexbox h3 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.flexboxa a{
+  color: #252729;
+  text-decoration: underline;
+}
+.flexboxa a:hover {
+  color: #19B7BB;
+  transition: 0.2s;
+}
+.flexboxa p {
+  margin: 8px 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+} 
+.flexboxa img {
+  line-height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  height: 15px;
+}
+.socials-gray {
+  margin-top: 12px;
+}
+.socials-gray svg {
+  height: 24px;
+}
+.socials-gray a:last-child {
+  margin-left: 0px;
+}
+.contact-buttons {
+  margin-top: 16px;
+  padding-bottom: 8px;
+}
+.contact-buttons a:last-child {
+  margin-top: 16px;
+}
+.telegram {
+  width: 175px;
+  border-radius: 8px;
+  padding: 11px 0px 8px 0px;
+}
+.telegram p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+.telegram img{
+  height: 16px;
+  vertical-align: middle;
+  padding: 0px 8px 5px 16px;
+}
+.telegram-2 {
+  width: 175px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: block;
+}
+.flexbox {
+  margin: 16px;
+}
+.flex-form-margin {
+  margin: 16px;
+}
+.flex-form h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.flex-buttons {
+  margin-bottom: 10px;
+}
+.conf {
+  margin-top: 8px;
+}
+.conf p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 14px;
+}
+input[type="text"] {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #252729;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EAEAF3;
+  border-radius: 12px;
+  margin: 8px 0;
+  outline: none;
+  padding: 0;
+  height: 40px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #19B7BB;
+  
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 36px;
+}
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  padding: 12px 12px;
+  transition: 0.3s;
+}
+.inputWithIcon i img {
+  height: 16px;
+}
+::-webkit-input-placeholder {
+  color:#BCBCC7; 
+  opacity:1;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
 }
 }
